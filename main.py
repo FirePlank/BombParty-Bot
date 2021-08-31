@@ -41,8 +41,8 @@ def activate():
             if search in i and i not in used:
                 test=letters+i
                 not_good = False
-                for i in string.ascii_uppercase:
-                    if i not in test:
+                for x in string.ascii_uppercase:
+                    if x not in test:
                         not_good = True
                         break
                 if not not_good:
