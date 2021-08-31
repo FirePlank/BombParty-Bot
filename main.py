@@ -19,7 +19,7 @@ def activate():
 
     while 1:
         x,y = pyautogui.position()
-        pyautogui.moveTo(808, 570) # Change this depending on where the bomb text is on your screen. laptop: 731, 563, pc: 808, 570
+        pyautogui.moveTo(808, 570) # Change this depending on where the bomb text is on your screen.
         pyautogui.leftClick()
         pyautogui.leftClick()
         before = pyperclip.paste()
@@ -47,7 +47,7 @@ def activate():
                 if not not_good:
                     found = [i]
                     break
-                
+
                 amount = 0
                 for x in i:
                     if x not in letters:
