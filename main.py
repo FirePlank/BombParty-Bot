@@ -39,6 +39,15 @@ def activate():
         shortest = 696969
         for i in content:
             if search in i and i not in used:
+                test=letters+i
+                not_good = False
+                for i in string.ascii_uppercase:
+                    if i not in test:
+                        not_good = True
+                if not not_good:
+                    found = [i]
+                    break
+                
                 amount = 0
                 for x in i:
                     if x not in letters:
@@ -79,8 +88,7 @@ def activate():
                 break
         except:pass
 
-    for i in found:
-        letters+=i
+    letters+=found
 
     for i in string.ascii_uppercase:
         if i not in letters:
