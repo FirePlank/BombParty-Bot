@@ -44,6 +44,7 @@ def activate():
                 for i in string.ascii_uppercase:
                     if i not in test:
                         not_good = True
+                        break
                 if not not_good:
                     found = [i]
                     break
