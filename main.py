@@ -67,10 +67,6 @@ def activate():
                     shortest = len(i)
                 elif amount == top and len(i) == shortest:
                     found.append(i)
-                    
-            elif i == search and i not in used:
-                found = [i]
-                break
 
         if found == ["6969"]:
             print("Did not find any available matches.")
