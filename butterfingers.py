@@ -3,7 +3,7 @@ import random
 import keyboard as k
 import time
 
-def butterfinger(text,prob=0.1,keyboard='qwerty'):
+def butterfinger(text, prob=5, keyboard='qwerty'):
 
 	keyApprox = {}
 	
@@ -41,8 +41,6 @@ def butterfinger(text,prob=0.1,keyboard='qwerty'):
 		print("Keyboard not supported.")
 		return
 
-	probOfTypo = int(prob * 100)
-
 	double_down = (False, "6969")
 	faster_for_longer = 50 if len(text) >= 10 else 15
 	for letter in text:
@@ -51,7 +49,7 @@ def butterfinger(text,prob=0.1,keyboard='qwerty'):
 		if not lcletter in keyApprox.keys():
 			newletter = lcletter
 		else:
-			if random.choice(range(0, 100)) <= probOfTypo:
+			if random.choice(range(0, 100)) <= prob:
 				newletter = random.choice(keyApprox[lcletter])
 				typo = True
 			else:

@@ -76,7 +76,7 @@ def activate():
         found = random.choice(found)
 
         used.append(found)
-        butterfinger(found, 0.05)
+        butterfinger(found)
         keyboard.press_and_release('enter')
 
         time.sleep(0.2)
