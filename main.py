@@ -81,7 +81,7 @@ def activate():
 
         time.sleep(0.2)
         try:
-            if pyautogui.pixelMatchesColor(566, 1004, (49, 43, 38)): # Change this depending on where the input text box is on your screen
+            if pyautogui.pixelMatchesColor(566, 1004, (49, 43, 38), tolerance=5): # Change this depending on where the input text box is on your screen
                 break
         except:pass
 
@@ -97,7 +97,7 @@ def activate():
 print("READY!")
 while 1:
     try:
-        if pyautogui.pixelMatchesColor(788, 1002, (25, 21, 19)): # Change this depending on where the input text box is on your screen
+        if pyautogui.pixelMatchesColor(788, 1002, (25, 21, 19), tolerance=5): # Change this depending on where the input text box is on your screen
             time.sleep(random.randint(1,100)/70)
             activate()
     except:
